@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Configuração Geral da Página */
+
+:root {
+  --primary-color: #343a40;
+  --primary-color-navbar: #343a40dc;
+  --secondary-color: #e5e5e5;
+  --text-color-primary: #343a40;
+  --button-color-primary: #343a40;
+  --text-color-white: #ffffff;
+  font-size: 12px;
+  font-family: "Assistant", sans-serif;
+  color: white;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1.7rem;
+}
+
+li {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+/* Configuração do Corpo de Página */
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+/* Header */
+
+header {
+  width: 100%;
+  height: 30vh;
+  background-color: var(--primary-color);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 5%;
+}
+
+/* Sessão de informações pessoais */
+
+.personal-information {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.personal-information div {
+  height: inherit;
+}
+
+.personal-information img {
+  width: 25vh;
+}
+
+.personal-content {
+  margin-left: 20px;
+}
+
+.social-media {
+  display: flex;
+  font-size: 30px;
+  justify-content: start;
+}
+
+.social-media figure {
+  margin-right: 20px;
+}
+
+/* Sessão de Contato */
+
+.contact-information {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.contact-content {
+  margin-bottom: 5vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.contact-phone {
+  text-align: end;
+}
+
+.contact-phone .ic_phone {
+  margin-right: 10px;
+  font-size: 0.9rem;
+}
+
+/* NavBar */
+
+.navbar-header {
+  width: 100%;
+  height: 8vh;
+  padding: 0 5%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--primary-color-navbar);
+}
+
+.navbar-header ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.navbar-header li {
+  margin-right: 40px;
+}
+
+/* Divisão do Site */
+
+.divisao {
+  width: 100%;
+  height: 7vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 5%;
+  margin: 20px 0;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+/* Main - grid-projects */
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* NavBar tipo de projeto */
+
+.navbar-projects {
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+.navbar-projects ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.navbar-projects li {
+  font-size: 1.2rem;
+  background-color: var(--primary-color);
+  padding: 5px 50px;
+  border-radius: 10px;
+  margin-right: 30px;
+}
+
+.grid-projects {
+  width: 90%;
+  height: 50vh;
+  margin-bottom: 5vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-project {
+  background-color: #f5f5f5;
+  width: 100%;
+  margin-right: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.box-project img {
+  width: 100%;
+  border: 1px solid var(p);
+}
+
+.box-project figcaption {
+  color: black;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.buttons-project {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.buttons-project button {
+  padding: 5px 20px;
+  border: none;
+  background-color: #cdcdcd;
+  border-radius: 5px;
+}
